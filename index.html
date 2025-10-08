@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Banco Segur — Tu futuro financiero</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="#">
+				<!-- simple logo -->
+				<span class="logo-mark">BS</span>
+				<span class="logo-text"><span class="logo-black">Banco</span><span class="logo-purple">Segur</span></span>
+			</a>
+			<nav class="main-nav" aria-label="Navegación principal">
+				<ul>
+					<li><a href="#productos">Productos</a></li>
+					<li><a href="#ventajas">Ventajas</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+				</ul>
+			</nav>
+			<div class="header-actions">
+				<a class="btn btn-outline" href="#">Ingresar</a>
+				<a class="btn btn-primary" href="#abrir-cuenta">Abrir cuenta</a>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="container hero-grid">
+				<div class="hero-content">
+					<h1 class="hero-title">
+						<span class="title-black">Tu dinero,</span>
+						<br />
+						<span class="title-purple">tu futuro seguro.</span>
+					</h1>
+					<p class="hero-sub">Cuentas, tarjetas y asesoría diseñada para que crezcas con tranquilidad.</p>
+					<div class="hero-cta">
+						<a class="btn btn-primary large" href="#abrir-cuenta">Abrir cuenta</a>
+						<a class="btn btn-outline" href="#productos">Ver productos</a>
+					</div>
+				</div>
+				<div class="hero-media" aria-hidden="true">
+					<!-- placeholder decorativo -->
+					<div class="card-sample">
+						<div class="chip"></div>
+						<div class="balance">
+							<span class="bal-label">Saldo</span>
+							<span class="bal-amount">€ 8,420.50</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="ventajas" class="features container">
+			<h2 class="section-title"><span class="title-black">Por qué</span> <span class="title-purple">Banco Segur</span></h2>
+			<ul class="features-grid">
+				<li>
+					<h3 class="feature-title">Seguridad</h3>
+					<p class="feature-desc">Protección avanzada y atención 24/7 para tu tranquilidad.</p>
+				</li>
+				<li>
+					<h3 class="feature-title">Comisiones claras</h3>
+					<p class="feature-desc">Sin sorpresas: tarifas transparentes y competitivas.</p>
+				</li>
+				<li>
+					<h3 class="feature-title">Tecnología</h3>
+					<p class="feature-desc">App rápida y herramientas para gestionar tu dinero desde cualquier lugar.</p>
+				</li>
+			</ul>
+		</section>
+
+		<section id="abrir-cuenta" class="cta container">
+			<h2 class="cta-title"><span class="title-black">Listo para</span> <span class="title-purple">comenzar?</span></h2>
+			<p class="cta-sub">Abre tu cuenta en minutos y empieza a administrar tus finanzas con confianza.</p>
+			<a class="btn btn-primary large" href="#contacto">Crear cuenta</a>
+		</section>
+	</main>
+
+	<footer id="contacto" class="site-footer">
+		<div class="container footer-inner">
+			<p class="footer-copy"><span class="logo-black">Banco</span><span class="logo-purple">Segur</span> — © <span id="year"></span></p>
+			<nav class="footer-nav">
+				<a href="#">Términos</a>
+				<a href="#">Privacidad</a>
+				<a href="#">Ayuda</a>
+			</nav>
+		</div>
+	</footer>
+
+	<script>
+		// pequeño script para año dinámico
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
