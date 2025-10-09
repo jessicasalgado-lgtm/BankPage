@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="ActionBank — Cuentas, tarjetas y herramientas para gestionar tus finanzas de forma segura y sencilla." />
+	<meta name="theme-color" content="#6a1b9a" />
 	<title>ActionBank — Tu futuro financiero</title>
 	<link rel="stylesheet" href="styles.css" />
 </head>
@@ -14,13 +16,17 @@
 				<span class="logo-mark">AB</span>
 				<span class="logo-text"><span class="logo-black">Action</span><span class="logo-purple">Bank</span></span>
 			</a>
-			<nav class="main-nav" aria-label="Navegación principal">
+			<nav id="main-nav" class="main-nav" aria-label="Navegación principal">
 				<ul>
 					<li><a href="#productos">Nosotros</a></li>
 					<li><a href="#ventajas">Servicios</a></li>
 					<li><a href="#contacto">Contacto</a></li>
 				</ul>
 			</nav>
+			<button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+				<span class="sr-only">Abrir navegación</span>
+				<span class="hamburger" aria-hidden="true"></span>
+			</button>
 			<div class="header-actions">
 				<a class="btn btn-outline" href="#">Ingresar</a>
 				<a class="btn btn-primary" href="#">Abrir cuenta</a>
@@ -32,7 +38,7 @@
 		<section class="hero">
 			<div class="container hero-grid">
 				<div class="hero-content">
-					<h1 class="hero-title">
+					<h1 class="hero-title animate-fade">
 						<span class="title-black">Tu dinero,</span>
 						<br />
 						<span class="title-purple">tu futuro seguro.</span>
@@ -45,7 +51,7 @@
 				</div>
 				<div class="hero-media" aria-hidden="true">
 					<!-- placeholder decorativo -->
-					<div class="card-sample">
+					<div class="card-sample animate-float">
 						<div class="chip"></div>
 						<div class="balance">
 							<span class="bal-label">Saldo</span>
@@ -57,7 +63,7 @@
 		</section>
 
 		<section id="ventajas" class="features container">
-			<h2 class="section-title"><span class="title-black">Ventajas<span class="title-purple">ActionBank></h2>
+			<h2 class="section-title"><span class="title-black">Ventajas</span> <span class="title-purple">ActionBank</span></h2>
 			<ul class="features-grid">
 				<li>
 					<h3 class="feature-title">Seguridad</h3>
@@ -83,7 +89,7 @@
 
 	<footer id="contacto" class="site-footer">
 		<div class="container footer-inner">
-			<p class="footer-copy"><span class="logo-black">Action<span class="logo-purple">Bank — © <span id="year"></span></p>
+			<p class="footer-copy"><span class="logo-black">Action</span><span class="logo-purple">Bank</span> — © <span id="year"></span></p>
 			<nav class="footer-nav">
 				<a href="#">Términos</a>
 				<a href="#">Privacidad</a>
@@ -95,6 +101,16 @@
 	<script>
 		// pequeño script para año dinámico
 		document.getElementById('year').textContent = new Date().getFullYear();
+		// toggler para navegación mobile
+		(function(){
+			const btn = document.querySelector('.nav-toggle');
+			const nav = document.getElementById('main-nav');
+			if(!btn || !nav) return;
+			btn.addEventListener('click', function(){
+				const open = nav.classList.toggle('open');
+				btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+			});
+		})();
 	</script>
 </body>
 </html>
