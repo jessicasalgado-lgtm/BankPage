@@ -1,0 +1,139 @@
+/* ===== Fondo y centrado ===== */
+body {
+  background: linear-gradient(135deg, #6a1b9a, #9c27b0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Tarjeta del formulario ===== */
+.signup-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 380px;
+  padding: 32px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* ===== Animación ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Logo ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo-mark {
+  font-weight: bold;
+  color: #6a1b9a;
+  font-size: 1.5rem;
+  margin-right: 6px;
+}
+
+.logo-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.logo-black {
+  color: #333;
+}
+.logo-purple {
+  color: #6a1b9a;
+}
+
+/* ===== Entradas ===== */
+.input-group {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #6a1b9a;
+  box-shadow: 0 0 6px rgba(106, 27, 154, 0.3);
+  outline: none;
+}
+
+/* ===== Botones ===== */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.btn {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.btn-primary {
+  background: #6a1b9a;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #8e24aa;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #6a1b9a;
+  color: #6a1b9a;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #6a1b9a;
+  color: white;
+}
+
+/* ===== Mensaje ===== */
+#signup-msg {
+  margin-top: 14px;
+  font-weight: 600;
+}
