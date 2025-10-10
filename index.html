@@ -45,7 +45,7 @@
 					</h1>
 					<p class="hero-sub">Cuentas, tarjetas y asesoría diseñada para que crezcas con tranquilidad.</p>
 					<div class="hero-cta">
-						<a class="btn btn-primary large" href="#abrir-cuenta">Abrir cuenta</a>
+						<a class="btn btn-primary large" href="signup.html">Abrir cuenta</a>
 						<a class="btn btn-outline" href="#productos">Ver servicios</a>
 					</div>
 				</div>
@@ -62,30 +62,52 @@
 			</div>
 		</section>
 
-		<section id="ventajas" class="features container">
-			<h2 class="section-title"><span class="title-black">Ventajas</span> <span class="title-purple">ActionBank</span></h2>
-			<ul class="features-grid">
-				<li>
-					<h3 class="feature-title">Seguridad</h3>
-					<p class="feature-desc">Protección avanzada y atención 24/7 para tu tranquilidad.</p>
-				</li>
-				<li>
-					<h3 class="feature-title">Comisiones claras</h3>
-					<p class="feature-desc">Sin sorpresas: tarifas transparentes y competitivas.</p>
-				</li>
-				<li>
-					<h3 class="feature-title">Tecnología</h3>
-					<p class="feature-desc">App rápida y herramientas para gestionar tu dinero desde cualquier lugar.</p>
-				</li>
-			</ul>
-		</section>
+		<!-- ⭐ SECCIÓN DE VENTAJAS REDISEÑADA -->
+<section id="ventajas" class="features container">
+  <h2 class="section-title animate-fade">
+    <span class="title-black">Ventajas</span> <span class="title-purple">ActionBank</span>
+  </h2>
 
-		<section id="abrir-cuenta" class="cta container">
-			<h2 class="cta-title"><span class="title-black">Listo para</span> <span class="title-purple">comenzar?</span></h2>
-			<p class="cta-sub">Abre tu cuenta en minutos y empieza a administrar tus finanzas con confianza.</p>
-			<a class="btn btn-primary large" href="#contacto">Crear cuenta</a>
-		</section>
-	</main>
+  <div class="cards-grid">
+    <div class="feature-card animate-fade">
+      <div class="icon-circle">🔒</div>
+      <h3 class="feature-title">Seguridad</h3>
+      <p class="feature-desc">Protección avanzada y atención 24/7 para tu tranquilidad.</p>
+    </div>
+
+    <div class="feature-card animate-fade">
+      <div class="icon-circle">💳</div>
+      <h3 class="feature-title">Comisiones claras</h3>
+      <p class="feature-desc">Sin sorpresas: tarifas transparentes y competitivas.</p>
+    </div>
+
+    <div class="feature-card animate-fade">
+      <div class="icon-circle">⚙️</div>
+      <h3 class="feature-title">Tecnología</h3>
+      <p class="feature-desc">App rápida y herramientas para gestionar tu dinero desde cualquier lugar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 💬 SECCIÓN DE CONTACTO / COMENZAR -->
+<section id="abrir-cuenta" class="cta contact-section">
+  <div class="contact-container">
+    <div class="contact-text">
+      <h2 class="cta-title">
+        <span class="title-black">¿Listo para</span> <span class="title-purple">comenzar?</span>
+      </h2>
+      <p class="cta-sub">Déjanos tus datos y te ayudaremos a abrir tu cuenta rápidamente.</p>
+      <a class="btn btn-primary large" href="signup.html">Crear cuenta</a>
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea placeholder="Mensaje (opcional)" rows="3"></textarea>
+      <button type="submit" class="btn btn-outline">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
+
 
 	<footer id="contacto" class="site-footer">
 		<div class="container footer-inner">

@@ -197,3 +197,92 @@ body{
 	.features-grid{grid-template-columns:1fr; gap:14px}
 	.footer-inner{flex-direction:column;align-items:flex-start}
 }
+/* 💎 Cards de ventajas */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.feature-card {
+  background: #fff;
+  border: 1px solid rgba(106,27,154,0.1);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: 0 6px 16px rgba(106,27,154,0.08);
+  transition: transform 0.3s var(--anim-ease), box-shadow 0.3s var(--anim-ease);
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(106,27,154,0.15);
+}
+
+.icon-circle {
+  font-size: 2rem;
+  background: #f3e5f5;
+  color: var(--purple);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+}
+
+/* 💬 Sección de contacto */
+.contact-section {
+  background: linear-gradient(180deg, #faf5ff 0%, #ffffff 100%);
+  padding: 60px 20px;
+  border-radius: 16px;
+  margin: 40px auto;
+  box-shadow: 0 8px 30px rgba(106,27,154,0.08);
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.contact-text {
+  text-align: left;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--purple);
+}
+
+/* 📱 Responsivo */
+@media (max-width: 800px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .contact-text {
+    text-align: center;
+  }
+}
